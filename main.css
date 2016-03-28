@@ -1,0 +1,207 @@
+/* 12, 24, 36, 48, 60, 72, 84, 96, 108, 120, 132, 144, 156, 168, 180, 192, 204, 216, 228, 240, 252, 264 286, 290, 302, 314, 326, 338, 350 */
+
+
+/* Colors
+
+rgba(0,0,0,1);
+rgba(255,255,255,1);
+rgba(255,0,0,1);
+rgba(0,255,0,1);
+
+*/
+
+
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+    position: relative;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+    background-color: inherit;
+}
+
+a:hover {
+    color: rgba(0, 255, 0, 0.8);
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    font-family: 'DovesType-Regular', sans-serif;
+}
+
+a,
+h2,
+form,
+input[type=submit] {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 6px 0;
+    text-align: justify;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+
+/* Navigation Bar */
+
+nav,
+nav a {
+    padding: 24px;
+}
+
+
+/* Title */
+
+.title {
+    height: 100vh;
+    position: relative;
+    color: rgba(255, 255, 255, 1);
+}
+
+.title-veil {
+    background-color: rgba(19, 15, 14, 0.4);
+    height: 100vh;
+}
+
+.title-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#main-title {
+    background: url(british-museum-ceiling.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+
+#main-title-content img {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    padding: 24px;
+    border: 6px solid rgba(0, 0, 0, 1);
+}
+
+#contact-title {
+    background: url(oxford-skyline.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+
+
+/* Content */
+
+.content-container {
+    width: 100vw;
+}
+
+#about {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#splitscreen td {
+    width: 50%;
+}
+
+#lorem-ipsum {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgba(255, 255, 255, 1);
+}
+
+#dolor-sit {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 1);
+}
+
+
+/* Social */
+
+footer {
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 1);
+    padding: 144px;
+}
+
+footer nav,
+.contact-icons {
+    text-align: center;
+}
+
+.contact-icons {
+    font-size: 40px;
+}
+
+footer i {
+    margin: 48px;
+}
+
+
+/* Contact */
+
+#contact-title-content {
+    transition-duration: 0.6s;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 48px;
+}
+
+#contact-title-content:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+input[type=text],
+textarea {
+    margin: 24px;
+    padding: 6px;
+    width: 300px;
+}
+
+input[type=text]:focus {}
+
+input[type=submit] {
+    padding: 24px;
+    background: transparent;
+    color: rgba(255, 255, 255, 1);
+}
+
+input[type=sumbit]:hover {
+    color: rgba(0, 255, 0, 1);
+}
+
+
+/* Crossovers */
+
+a,
+i {
+    transition-duration: 0.2s;
+}
+
+.content,
+#splitscreen td {
+    padding: 144px;
+}
+
+nav,
+form td {
+    text-align: right;
+}
