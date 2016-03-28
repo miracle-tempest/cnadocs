@@ -18,44 +18,64 @@
 </head>
 
 <body>
-    <!-- Navigation Bar and Title -->
+    <!-- Navigation Bar and Contact Form -->
     <section class="title" id="contact-title">
         <div class="title-veil">
+            <!-- Navigation Bar -->
             <nav id="main-nav">
                 <a href="index.html">Home</a>
                 <a href="">About</a>
                 <a href="">Blog</a>
                 <a href="contact.html">Contact</a>
             </nav>
+
+            <!-- Contact Form -->
             <div class="title-content" id="contact-title-content">
                 <h1>Contact</h1>
                 <form id="contact-form">
-                    <table>
-                        <tr>
-                            <td>Name</td>
-                            <td>
-                                <input type="text" name="name">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Email</td>
-                            <td>
-                                <input type="text" name="email">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Message</td>
-                            <td>
-                                <textarea name="message" form="contact-form" rows="4"></textarea>
-                            </td>
-                        </tr>
-                    </table>
-                    <input type="submit">
-                </form>
 
+                    <!-- Input Fields -->
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="text" name="email" placeholder="Email">
+                    <textarea name="message" form="contact-form" placeholder="Message"></textarea>
+                    <br>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-button">
+                        <i class="ico ico-arrow-circle-right"></i>
+                    </button>
+                </form>
             </div>
+
         </div>
     </section>
+
+    <!-- Social -->
+    <footer class="social">
+
+        <!-- External Links -->
+        <nav>
+            <a href="index.html">Home</a>|
+            <a href="">About</a>|
+            <a href="">Careers</a>|
+            <a href="">Blog</a>|
+            <a href="">Contact</a>
+        </nav>
+
+        <!-- Internal Links -->
+        <div class="contact-icons">
+            <a href="https://github.com/jloughry" target="_blank">
+                <i class="ico ico-github-alt"></i>
+            </a>
+            <a href="https://twitter.com/cnadoctor" target="_blank">
+                <i class="ico ico-twitter"></i>
+            </a>
+            <a href="mailto:Joe.Loughry@CandAdoctor.com" target="_blank">
+                <i class="ico ico-envelope-o "></i>
+            </a>
+        </div>
+
+    </footer>
 </body>
 
 </html>
