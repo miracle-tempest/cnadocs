@@ -18,51 +18,48 @@
 </head>
 
 <body>
-    <!-- Navigation Bar and Contact Form -->
-    <section class="title" id="contact-title">
-        <div class="title-veil">
-            <!-- Navigation Bar -->
-            <nav id="main-nav">
-                <a href="index.html">Home</a>
-                <a href="">About</a>
-                <a href="">Blog</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+    <!-- Navigation bar -->
+    <section class="content-container" id="contact-form-container">
+        <nav id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="">About</a>
+            <a href="">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
 
-            <!-- Contact Form -->
-            <div class="title-content" id="contact-title-content">
-                <h1>Contact</h1>
-                <form id="contact-form">
+        <!-- Contact form -->
 
-                    <!-- Input Fields -->
-                    <input type="text" name="name" placeholder="Name">
-                    <input type="text" name="email" placeholder="Email">
-                    <textarea name="message" form="contact-form" placeholder="Message"></textarea>
-                    <br>
+        <div class="content">
+            <h1>Contact</h1>
+            <form action="mailto:Joe.Loughry@CandAdoctor.com" method="post" id="contact-form">
+                <!-- Input fields -->
+                <input type="text" name="name" placeholder="Name">
+                <br>
+                <input type="text" name="email" placeholder="Email">
+                <br>
+                <textarea name="message" placeholder="Message" form="contact-form"></textarea>
+                <br>
 
-                    <!-- Submit Button -->
-                    <button type="submit" class="submit-button">
-                        <i class="ico ico-arrow-circle-right"></i>
-                    </button>
-                </form>
-            </div>
-
+                <!-- Submit button -->
+                <button type="submit" form="contact-form">
+                    <i class="ico ico-arrow-circle-right"></i>
+                </button>
+            </form>
         </div>
     </section>
 
     <!-- Social -->
     <footer class="social">
 
-        <!-- External Links -->
+        <!-- Internal Links -->
         <nav>
             <a href="index.html">Home</a>|
             <a href="">About</a>|
-            <a href="">Careers</a>|
             <a href="">Blog</a>|
-            <a href="">Contact</a>
+            <a href="contact.html">Contact</a>
         </nav>
 
-        <!-- Internal Links -->
+        <!-- External Links -->
         <div class="contact-icons">
             <a href="https://github.com/jloughry" target="_blank">
                 <i class="ico ico-github-alt"></i>
@@ -76,6 +73,7 @@
         </div>
 
     </footer>
+
 </body>
 
 </html>

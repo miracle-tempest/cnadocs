@@ -8,6 +8,8 @@ rgba(255,255,255,1);
 rgba(255,0,0,1);
 rgba(0,255,0,1);
 
+The value "a" denotes opacity.
+
 */
 
 
@@ -25,16 +27,18 @@ body {
 }
 
 a {
-    text-decoration: inherit;
+    text-decoration: underline;
     color: inherit;
     background-color: inherit;
 }
 
-a:hover {
+a:hover,
+button[type=submit]:hover {
     color: rgba(0, 255, 0, 0.8);
 }
 
 h1 {
+    color: rgba(255, 255, 255, 1);
     font-size: 48px;
     font-family: 'DovesType-Regular', sans-serif;
 }
@@ -48,12 +52,21 @@ table {
     border-collapse: collapse;
 }
 
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
 
 /* Navigation bar */
 
-nav,
-nav a {
-    padding: 24px;
+nav {
+    text-align: right;
 }
 
 
@@ -61,7 +74,6 @@ nav a {
 
 .title {
     position: relative;
-    color: rgba(255, 255, 255, 1);
     text-align: center;
 }
 
@@ -82,7 +94,6 @@ nav a {
 
 #main-title-content img {
     border-radius: 12px;
-    padding: 24px;
     border: 6px solid rgba(0, 0, 0, 1);
 }
 
@@ -90,16 +101,19 @@ nav a {
 /* Titles' fixed background images */
 
 #main-title {
-    background: url(british-museum-ceiling.jpg) no-repeat fixed center;
+    background-image: url(british-museum-ceiling.jpg);
 }
 
-#contact-title {
-    background: url(oxford-skyline.jpg) no-repeat fixed center;
+#blog-title {
+    background-image: url(oxford-skyline.jpg);
 }
 
 #main-title,
-#contact-title {
+#blog-title {
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 
@@ -110,7 +124,6 @@ nav a {
 }
 
 #about {
-    color: rgba(255, 255, 255, 1);
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -120,71 +133,59 @@ nav a {
 
 #blog {
     background-color: rgba(0, 0, 0, 0.6);
-    color: rgba(255, 255, 255, 1);
 }
 
-#dolor-sit {
+#foo {
     background-color: rgba(0, 0, 0, 0.4);
     color: rgba(255, 255, 255, 1);
 }
 
 
-/* Social */
+/* Contact */
 
-footer {
-    color: rgba(0, 0, 0, 1);
-    padding: 144px;
+#contact-form-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
 }
+
+#contact-form-container nav {
+    color: rgba(255, 255, 255, 1);
+}
+
+input[type=text],
+textarea {
+    font-size: 18px;
+    width: 100%;
+    margin: 24px 0;
+    padding: 12px;
+}
+
+button[type=submit] {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 1);
+    font-size: 48px;
+}
+
+input[type=text]:focus,
+textarea:focus,
+button[type=submit]:focus {
+    outline: none;
+}
+
+
+/* Social */
 
 footer nav,
 .contact-icons {
     text-align: center;
 }
 
-.contact-icons,
-.submit-button {
-    font-size: 40px;
+.contact-icons a {
+    font-size: 28px;
 }
 
 footer i {
     margin: 48px;
-}
-
-
-/* Contact */
-
-#contact-title-content {
-    transition-duration: 0.6s;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 48px;
-}
-
-#contact-title-content:hover {
-    background-color: rgba(0, 0, 0, 1);
-}
-
-textarea,
-input[type=text] {
-    width: 200px;
-    padding: 8px;
-    margin: 24px;
-    background-color: rgba(255, 255, 255, 1);
-}
-
-input[type=text]:focus,
-textarea:focus,
-.submit-button {
-    outline: 0;
-}
-
-button[type=submit] {
-    padding: 24px;
-    background: transparent;
-    color: rgba(255, 255, 255, 1);
-}
-
-button[type=submit]:hover {
-    color: rgba(0, 255, 0, 1);
 }
 
 
@@ -205,17 +206,25 @@ i {
 }
 
 .content,
-#splitscreen td {
+#splitscreen td,
+.content-form-container,
+footer {
     padding: 144px;
 }
 
-nav,
-form td {
-    text-align: right;
+#main-title-content img,
+body {
+    background-color: rgba(255, 255, 255, 1)
 }
 
-#main-title-content img,
-body,
-footer {
-    background-color: rgba(255, 255, 255, 1)
+.title,
+#blog,
+#about {
+    color: rgba(255, 255, 255, 1);
+}
+
+nav,
+nav a,
+#main-title-content img {
+    padding: 24px;
 }
