@@ -43,6 +43,16 @@ h1 {
     font-family: 'DovesType-Regular', sans-serif;
 }
 
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+h3 {
+    color: rgba(0, 0, 0, 0.6);
+    font-style: italic;
+}
+
 p {
     margin: 12px 0 24px 0;
     text-align: justify;
@@ -193,8 +203,8 @@ footer i {
 
 a,
 p,
-h2,
 form,
+h3,
 input[type=submit] {
     font-size: 18px;
     font-weight: 300;
